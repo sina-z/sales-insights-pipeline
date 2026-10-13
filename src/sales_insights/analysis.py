@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 
 REQUIRED_COLUMNS = {"date", "region", "product", "quantity", "unit_price"}
@@ -13,7 +14,7 @@ def load_data(path):
 
 
 def revenue_by_region(df):
-    return df.groupby("region")["revenue"].sum().sort_values(ascending=False)
+    return df.groupby("region")["revenue"].sum().sort_values(ascending=True)
 
 
 def top_products(df, n=3):
