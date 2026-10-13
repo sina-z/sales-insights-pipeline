@@ -13,7 +13,7 @@ def load_data(path):
 
 
 def revenue_by_region(df):
-    return df.groupby("region")["revenue"].sum().sort_values(ascending=True)
+    return df.groupby("region")["revenue"].sum().sort_values(ascending=False)
 
 
 def top_products(df, n=3):
