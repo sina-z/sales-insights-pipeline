@@ -1,4 +1,3 @@
-import os
 import pandas as pd
 
 REQUIRED_COLUMNS = {"date", "region", "product", "quantity", "unit_price"}
